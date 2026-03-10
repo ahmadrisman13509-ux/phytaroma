@@ -9,6 +9,9 @@ def hitung_luas_persegi(panjang_sisi):
 def hitung_luas_lingkaran(jari_jari):
     return 3.14 * jari_jari ** 2
 
+def hitung_luas_Belah_Ketupat(diagonal1, diagonal2):
+    return 0.5 * diagonal1 * diagonal2
+
 
 def hitung_luas(menu, *args):
     if menu == 1:
@@ -17,5 +20,7 @@ def hitung_luas(menu, *args):
         return hitung_luas_persegi(*args)
     elif menu == 3:
         return hitung_luas_lingkaran(*args)
+    elif menu == 4:
+        return hitung_luas_Belah_Ketupat(*args)
     else:
         return "Menu tidak valid"
